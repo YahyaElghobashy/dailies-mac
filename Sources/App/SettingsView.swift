@@ -16,6 +16,8 @@ struct SettingsView: View {
                 DangerCard()
                 Text("Checks refresh every 2 s while this screen is open · last \(perms.lastChecked.formatted(date: .omitted, time: .standard))")
                     .font(.system(size: 10.5)).foregroundStyle(Theme.text3)
+                MadeByFooter()
+                    .padding(.top, 4)
             }
             .padding(24)
             .padding(.top, 6)
